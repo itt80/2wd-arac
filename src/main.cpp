@@ -89,11 +89,18 @@ void sagaDon(int guc) {
 
 // loop fonksiyonu, Arduino'nun sürekli olarak çalıştırdığı fonksiyondur.
 void loop() {
+
+  solMotorIleri(200);
+  delay(1000);   
+  solMotorGeri(200); 
+  delay(1000);
+  solMotorDurdur();
+
+
   solaDon(200);
   delay(1000);  
   sagaDon(200);
   delay(1000);
-
   ileriGit(200);
   delay(1000);    
   geriGit(200); 
